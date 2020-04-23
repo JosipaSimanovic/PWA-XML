@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Us - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-1.css">
+    <link rel="stylesheet" href="assets/css/Sidebar.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=moda">Moda</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=sport">Sport</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="unos.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus"></i></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="mt-90">
+        <div class="container">
+            <div class="col offset-md-3 offset-xl-3 col-md-6 mb-50">
+                <div class="block-heading text-center">
+                    <h2 class="text-info">Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 offset-xl-3">
+                    <form method="post" action="skripta.php" name="unos" enctype="multipart/form-data">
+                        <div class="form-group"><label>Ime vijesti</label><input class="form-control" type="text" name="name"></div>
+                        <div class="form-group"><label>Kratki sažetak vijesti</label><textarea class="form-control" name="short"></textarea></div>
+                        <div class="form-group"><label>Tekst vijesti</label><textarea class="form-control" rows="10" name="content"></textarea></div>
+                        <div class="form-group"><label>Tekst vijesti</label><select class="form-control" data-live-search="true" name="category"><option value="sport" selected="">Sport</option><option value="moda">Moda</option><option value="vijesti">Vijesti</option></select></div>
+                        <div
+                            class="form-group relative"><label>Message</label><input type="file" class="custom-file-input" name="file"><button class="btn btn-secondary absolute" type="button">Upload file...</button></div>
+                <div class="form-group"><label>Prikaži obavijest na stranici</label>
+                    <div class="form-check custom-control custom-checkbox"><input class="form-check-input custom-control-input" type="checkbox" id="customCheck1" name="show"><label class="form-check-label custom-control-label" for="customCheck1">Prikaži</label></div>
+                </div>
+                <div class="form-group"><label>Ocjena :)</label><input class="form-control-range slider" type="range" id="range" step="1" min="1" max="5" value="3" oninput="slidervalue.value = range.value" name="grade"></div>
+                <div class="form-group"><button class="btn btn-primary btn-block mt-5" type="submit">Send</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark"></section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-sm-4">
+                    <ul>
+                        <li>Josipa Šimanović</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-sm-4">
+                    <ul>
+                        <li><a href="mailto:jsimanovi@tvz.hr?Subject=PWA-projekt">jsimanovi@tvz.hr</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-sm-4">
+                    <ul>
+                        <li>2020</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
