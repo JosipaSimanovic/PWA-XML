@@ -73,18 +73,29 @@ mysqli_close($dbc);
 </head>
 
 <body>
+<?php
+    session_start();
+    ?>
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=moda">Moda</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=sport">Sport</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="unos.html">Contact Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus"></i></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link " href="index.php">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.php">Gallery</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link"
+                            href="category.php?category=moda">Moda</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link"
+                            href="category.php?category=sport">Sport</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="unos.php">Contact Us</a></li>
+                    <?php if (isset($_SESSION['username'])) {
+                        echo '<li class="nav-item" role="presentation"><span class="nav-link"><i class="fas fa-user"></i> ' . $_SESSION['username'] . '</span></li>';
+                        echo '<li class="nav-item" role="presentation"><a href="logout.php" class="nav-link active"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>';
+                    } else {
+                        echo '<li class="nav-item" role="presentation"><a class="nav-link" href="login.php"><i class="fas fa-user"></i></a></li>';
+                        echo '<li class="nav-item" role="presentation"><a class="nav-link "  href="registration.php"><i class="fas fa-user-plus"></i></a></li>';
+                    }
+                ?>
                 </ul>
         </div>
         </div>

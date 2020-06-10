@@ -1,6 +1,5 @@
 <?php
-$dbc = mysqli_connect('localhost', 'root', '', 'pwa')or
-die('Error connecting to MySQL server.'. mysqli_connect_error());;
+
 define('UPLPATH', 'upload/');
 ?>
 <!DOCTYPE html>
@@ -23,18 +22,28 @@ define('UPLPATH', 'upload/');
 </head>
 
 <body>
+<?php
+    include 'connect.php';
+    session_start();
+    ?>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.php">Gallery</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=moda">Moda</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=sport">Sport</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="unos.html">Contact Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="unos.php">Contact Us</a></li>
+                    <?php if (isset($_SESSION['username'])) {
+                            echo '<li class="nav-item" role="presentation"><span class="nav-link"><i class="fas fa-user"></i> ' . $_SESSION['username'] . '</span></li>';
+                            echo '<li class="nav-item" role="presentation"><a href="logout.php" class="nav-link"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>';
+                        } else {
+                            echo '<li class="nav-item" role="presentation"><a class="nav-link" href="login.php"><i class="fas fa-user"></i></a></li>';
+                            echo '<li class="nav-item" role="presentation"><a class="nav-link"  href="registration.php"><i class="fas fa-user-plus"></i></a></li>';
+                        }
+                    ?>
                 </ul>
         </div>
         </div>
@@ -44,7 +53,7 @@ define('UPLPATH', 'upload/');
         <section class="clean-block clean-hero" style="background-image: url(&quot;assets/img/Mesa%20de%20trabajo%201%20copy.svg&quot;);color: rgba(29,48,40,0);background-size: cover;background-position: center bottom;">
             <div class="text">
                 <h2>Projekt PWA, XMLP</h2>
-                <p>HTML, PHP, MySQL i XML</p><button class="btn btn-outline-light btn-lg" type="button">Unos</button></div>
+                <p>HTML, PHP, MySQL i XML</p><button class="btn btn-primary btn-lg" type="button">Unos</button></div>
         </section>
         <section id="drugi-screen" class="clean-block clean-info dark">
             <div class="container">
@@ -58,7 +67,7 @@ define('UPLPATH', 'upload/');
                         <h3>Lorem impsum dolor sit amet</h3>
                         <div class="getting-started-info">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button></div>
+                        </div><button class="btn btn-primary btn-lg" type="button">Join Now</button></div>
                 </div>
             </div>
         </section>

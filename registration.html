@@ -23,13 +23,13 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="index.php">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=moda">Moda</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=sport">Sport</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="unos.html">Contact Us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html"><i class="fas fa-user-plus"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active"  href="registration.html"><i class="fas fa-user-plus"></i></a></li>
                 </ul>
         </div>
         </div>
@@ -38,13 +38,31 @@
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Registration</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                    <h2 class="text-info">Registracija</h2>
+                    
                 </div>
                 <form>
-                    <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="form-group"><label for="password">Password</label><input class="form-control item" type="password" id="password"></div>
-                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div><button class="btn btn-primary btn-block" type="submit">Sign Up</button></form>
+                    <div class="form-group">
+                        <label for="ime">Ime</label>
+                        <input class="form-control item" type="text" id="ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="prezime">Prezime</label>
+                        <input class="form-control item" type="text" id="prezime">
+                    </div>
+                    <div class="form-group">
+                        <label for="korisnicko_ime">Korisničko ime</label>
+                        <input class="form-control item" type="text" id="korisnicko_ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="lozinka">Lozinka</label>
+                        <input class="form-control item" type="password" id="lozinka">
+                    </div>
+                    <div class="form-group">
+                        <label for="lozinka2">Ponovite lozinku</label>
+                        <input class="form-control item" type="password" id="lozinka2">
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit">Registracija</button></form>
             </div>
         </section>
     </main>
