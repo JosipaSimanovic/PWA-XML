@@ -777,3 +777,6 @@ main{
   width: 100%;
   max-width:100%;
 }
+.custom-file-input{
+  z-index: 8;
+}
