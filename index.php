@@ -27,7 +27,7 @@ define('UPLPATH', 'upload/');
     session_start();
     ?>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.php"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -53,7 +53,7 @@ define('UPLPATH', 'upload/');
         <section class="clean-block clean-hero" style="background-image: url(&quot;assets/img/Mesa%20de%20trabajo%201%20copy.svg&quot;);color: rgba(29,48,40,0);background-size: cover;background-position: center bottom;">
             <div class="text">
                 <h2>Projekt PWA, XMLP</h2>
-                <p>HTML, PHP, MySQL i XML</p><button class="btn btn-primary btn-lg" type="button">Unos</button></div>
+                <p>HTML, PHP, MySQL i XML</p><a class="btn btn-primary btn-lg" role="button" href="unos.php">Unos</a></div>
         </section>
         <section id="drugi-screen" class="clean-block clean-info dark">
             <div class="container">
@@ -67,7 +67,7 @@ define('UPLPATH', 'upload/');
                         <h3>Lorem impsum dolor sit amet</h3>
                         <div class="getting-started-info">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div><button class="btn btn-primary btn-lg" type="button">Join Now</button></div>
+                        </div><a class="btn btn-primary btn-lg" role="button" href="registration.php">Join Now</a></div>
                 </div>
             </div>
         </section>

@@ -318,6 +318,7 @@ img, svg {
   color: white;
   box-shadow: 0 2px 10px rgba(0,0,0,.075);
 }
+
 @media only screen and (max-width: 768px) {
   .clean-block.clean-form form{
     max-width: 100%;
@@ -771,4 +772,8 @@ a:hover, a:focus, a:active{
 }
 main{
   min-height: calc(100vh - 75px);
+}
+.clean-block.clean-form .forma{
+  width: 100%;
+  max-width:100%;
 }

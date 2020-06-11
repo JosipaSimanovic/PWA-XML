@@ -22,7 +22,7 @@
     session_start();
     ?>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button
+        <div class="container"><a class="navbar-brand logo" href="index.php"><img id="logo" src="assets/img/js.svg"></a><button
                 data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
                     navigation</span><span class="navbar-toggler-icon"><img class="menu"
                         src="assets/img/menu-three-outlined-bars.svg"></span></button>
@@ -51,15 +51,13 @@
         <div class="container">
             <div class="col offset-md-3 offset-xl-3 col-md-6 mb-50">
                 <div class="block-heading text-center">
-                    <h2 class="text-info">Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
-                        mattis vitae leo.</p>
+                    <h2 class="text-info">Contact Us</h2> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3 offset-xl-3">
-                    <section class="clean-block clean-form dark">
-                    <form action="skripta.php" method="post" name="unos" enctype="multipart/form-data">
+                    <div class="clean-block clean-form dark">
+                    <form action="skripta.php" method="post" name="unos" enctype="multipart/form-data" class="forma">
                         <div class="form-group">                            
                             <label for="title">Ime vijesti <span class="bojaPoruke">*</span></label>
                             <input class="form-control" type="text"  id="title">
@@ -111,7 +109,7 @@
                             <button class="btn btn-primary btn-block mt-5" type="submit" id="slanje">Send</button>
                         </div>
                     </form>
-                    </section>
+                </div>
                 </div>
             </div>
         </div>

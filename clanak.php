@@ -2,7 +2,7 @@
 include 'connect.php';
 define('UPLPATH', 'upload/');
 $id=$_GET['id'];
-
+$category=$_GET['category'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,7 @@ $id=$_GET['id'];
     session_start();
     ?>
 <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.php"><img id="logo" src="assets/img/js.svg"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><img class="menu" src="assets/img/menu-three-outlined-bars.svg"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -65,7 +65,7 @@ $id=$_GET['id'];
                         echo '<p>';
                         echo  $row['content'];
                         echo '</p>';
-                        echo '<a class="" role="link" href="clanak.php?category='.$row['category'].'">See more like this</a>';
+                        echo '<a class="" role="link" href="category.php?category='.$row['category'].'">See more like this</a>';
                         echo '</div> </div> </div>';
                         }?> 
         <!-- <div class="post-image" style="background-image:url(&quot;assets/img/scenery/image3.jpg&quot;);"></div>

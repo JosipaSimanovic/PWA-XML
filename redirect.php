@@ -32,7 +32,7 @@ if (isset($_POST['prijava'])) {
         $_SESSION['username'] = $imeKorisnika;
         $_SESSION['level'] = $levelKorisnika;
 
-        header('Location: Location: contact-us.php');
+        header('Location: contact-us.php');
     } else {
         header('Location: login.php?error=true');
         
