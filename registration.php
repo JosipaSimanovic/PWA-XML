@@ -35,7 +35,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="unos.php">Contact Us</a></li>
                     <?php if (isset($_SESSION['username'])) {
                             echo '<li class="nav-item" role="presentation"><span class="nav-link"><i class="fas fa-user"></i> ' . $_SESSION['username'] . '</span></li>';
-                            echo '<li class="nav-item" role="presentation"><a href="logout.php" class="nav-link"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>';
+                            echo '<li class="nav-item" role="presentation"><a href="logout.php" class="nav-link"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></a></li>';
                         } else {
                             echo '<li class="nav-item" role="presentation"><a class="nav-link" href="login.php"><i class="fas fa-user"></i></a></li>';
                             echo '<li class="nav-item" role="presentation"><a class="nav-link active"  href="registration.php"><i class="fas fa-user-plus"></i></a></li>';
