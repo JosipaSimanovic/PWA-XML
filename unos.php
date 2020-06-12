@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Contact Us - Brand</title>
+    <link rel="icon" type="image/png"  href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -51,7 +52,7 @@
         <div class="container">
             <div class="col offset-md-3 offset-xl-3 col-md-6 mb-50">
                 <div class="block-heading text-center">
-                    <h2 class="text-info">Contact Us</h2> 
+                    <h2 class="text-info">Unos</h2> 
                 </div>
             </div>
             <div class="row">
@@ -60,22 +61,22 @@
                     <form action="skripta.php" method="post" name="unos" enctype="multipart/form-data" class="forma">
                         <div class="form-group">                            
                             <label for="title">Ime vijesti <span class="bojaPoruke">*</span></label>
-                            <input class="form-control" type="text"  id="title">
+                            <input class="form-control" type="text"  id="title" name="title">
                             <span id="porukaTitle" class="bojaPoruke"></span>
                         </div>
                         <div class="form-group">                                                   
                             <label for="about">Kratki sažetak vijesti <span class="bojaPoruke">*</span></label>
-                            <textarea class="form-control"  id="about"></textarea>
+                            <textarea class="form-control"  id="about" name="about"></textarea>
                             <span id="porukaAbout" class="bojaPoruke"></span>
                         </div>
                         <div class="form-group">                            
                             <label for="content">Tekst vijesti <span class="bojaPoruke">*</span></label>
-                            <textarea class="form-control" rows="10"   id="content"></textarea>
+                            <textarea class="form-control" rows="10"   id="content" name="content"></textarea>
                             <span id="porukaContent" class="bojaPoruke"></span>
                         </div>
                         <div class="form-group">                            
                             <label for="category">Kategorija <span class="bojaPoruke">*</span></label>
-                            <select class="form-control" data-live-search="true" id="category">
+                            <select class="form-control" data-live-search="true" id="category" name="category">
                                 <option value="sport" selected="">Sport</option>
                                 <option value="moda">Moda</option>
                                 <option value="vijesti">Vijesti</option>
@@ -85,7 +86,7 @@
                         <div class="form-group relative">       
                             <span id="porukaSlika" class="bojaPoruke"></span>                     
                             <label for="photo">Unesite sliku <span class="bojaPoruke">*</span></label>
-                            <input type="file" class="custom-file-input"  id="photo">
+                            <input type="file" class="custom-file-input"  id="photo" name="photo">
                             <button class="btn btn-secondary absolute" type="button">Upload file...</button>
                             
                         </div>
@@ -103,10 +104,10 @@
                             <label for="grade">Ocjena :)</label>
                             <input class="form-control-range slider"
                                 type="range" id="range" step="1" min="1" max="5" value="3"
-                                oninput="slidervalue.value = range.value" id="grade">
+                                oninput="slidervalue.value = range.value" id="grade" name="grade">
                             </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block mt-5" type="submit" id="slanje">Send</button>
+                            <button class="btn btn-primary btn-block mt-5" type="submit" id="slanje" name="slanje">Send</button>
                         </div>
                     </form>
                 </div>

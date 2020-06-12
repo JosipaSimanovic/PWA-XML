@@ -2,14 +2,16 @@
 <html>
 <?php 
 // ---------------MySQL connect-----------------
+session_start();
 include 'connect.php';
-if (isset($_POST['name']))
+
+if (isset($_POST['title']))
 {
- $name=$_POST['name'];
+ $name=$_POST['title'];
 }
-if (isset($_POST['short']))
+if (isset($_POST['about']))
 {
- $short=$_POST['short'];
+ $short=$_POST['about'];
 }
 if (isset($_POST['content']))
 {
@@ -20,8 +22,8 @@ if (isset($_POST['category']))
  $category=$_POST['category'];
 }
 
-$tmp=$_FILES["file"]["tmp_name"];
-$picture = $_FILES['file']['name'];
+$tmp=$_FILES["photo"]["tmp_name"];
+$picture = $_FILES['photo']['name'];
 $target = 'upload/' . $picture;
 move_uploaded_file($tmp, $target);
 
@@ -45,7 +47,7 @@ $result.="<Content>".$content."</Content>";
 $result.="<Category>".$category."</Category>";
 $result.="<Grade>".$grade."</Grade>";
 $result.="</Unos>";
-file_put_contents("XML/vijest.xml",$result);
+file_put_contents("XML/".$name.".xml",$result);
 
 
 // ---------------MySQL-----------------
@@ -60,6 +62,7 @@ mysqli_close($dbc);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Blog Post - Brand</title>
+    <link rel="icon" type="image/png"  href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">

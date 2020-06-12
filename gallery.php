@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Gallery - Brand</title>
+    <link rel="icon" type="image/png"  href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -27,7 +28,7 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="index.php">Home</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link " href="index.php">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="gallery.php">Gallery</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=moda">Moda</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="category.php?category=sport">Sport</a></li>
